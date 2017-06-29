@@ -1,6 +1,7 @@
 
 @import './fonts'
 @import './reset.css'
+@import './font-image.css'
 
 
 * 
@@ -27,4 +28,82 @@ input {
     width 310px
     margin 0 auto
     padding 0 5px
-.    
+.header-top
+    width 100%
+    height 92px
+.is-top
+    height 58px    
+.header
+    width 100%
+    height auto
+    .header-mob__hide
+        display none
+    .header__mobile 
+        display block
+        width 75%
+        height 100%
+        overflow-y auto
+        background-position right top
+        position fixed
+        right 100%
+        top 0
+        z-index 9999
+        -webkit-transition right 0.7s ease-out 0.01s
+        -moz-transition right 0.7s ease-out 0.01s
+        transition right 0.7s ease-out 0.01s
+        background #12c609
+        -webkit-box-shadow 0 0 10px 5px rgba(0,0,0,0.4) inset
+        -moz-box-shadow 0 0 10px 5px rgba(0,0,0,0.4) inset
+        box-shadow 0 0 10px 5px rgba(0,0,0,0.4) inset
+    .is-mobile-header
+        position fixed
+        left 0
+        top 0
+        .header__mob-wrapper 
+            width 100%
+            height 100%
+            position relative
+        .header__mob-content
+            .header__mob-menu        
+                .header__menu
+                    float none
+                .header__link
+                    float none
+                    font-size 2em
+                    &:hover
+                        color #ff7101
+    .header__content
+        .header__mob-icon
+            float left
+            display block
+            width 35px
+            height 50px
+            cursor pointer
+            .header__mob-line
+                width 100%
+                height 5px
+                background #12c609
+                margin-bottom 10px
+    
+#map
+    width 100%
+    height 400px
+    background-color grey                
+// .products
+//     .cards-row
+//         width 50%
+//         .card
+//             .card__prices
+//                 .card__price
+//                     width 50%
+//                     img
+//                         width 32px
+//                     :first-child
+//                         width 22px
+//                     :last-child
+//                         width 42px       
+//                         height 42px                                   
+                        
+                            
+                            
+                    

@@ -1,4 +1,13 @@
+include /mixin/mixin
+-var links=['Наша вода', 'Оборудование', 'Доставка', 'О компании']
+-var datablock=[{title:"Питьевая вода ТМ Украиночка"}, {title:"Питьевая вода ТМ Эталон"}]
+-var dataitem=[{price:"52"}, {price:"72"}, {price:"82", label:true}]
+
+
+-var dataequipment=[{title:"Продажа настольных кулеров:", text1:"Электронные", price1: "2500 грн", text2:'Компрессорные', price2: "2500 грн"}, {title:"Аренда кулеров:", label:true, text1:"1 месяц", price1:"100 грн"} , {title:"Продажа напольных кулеров:" , text1:"Электронные", price1: "2500 грн", text2:'Компрессорные', price2: "2500 грн" }]
+
 doctype html!
+
 html
     head
         meta(charset="Utf=8")
@@ -8,5 +17,133 @@ html
    
 
     body
-        div
-            a(href="404.html") fff
+        div.header.clearfix
+            div.container.clearfix
+                div.header__content    
+                    div.header__part
+                        div.header__block
+                            div.header__logo-wrapper
+                                img(src="./images/logo.png")
+                            p.header__logo-text Акватак Украина
+                        div.header__block.header-mob__hide
+                            ul.header__menu
+                                each link, i in links 
+                                    li.header__link: a(href="#block"+i+"") #{link}
+                        div.header__block
+                            a.telephone-icon.icon-phone(href="")
+                        div.header__block.header-mob__hide       
+                            a.header__telephone +38 066 05 05 000     
+                    div.header__mob-icon
+                        div.header__mob-line
+                        div.header__mob-line
+                        div.header__mob-line
+                    div.header__mobile
+                        div.header__mob-wrapper
+                            div.header__mob-content
+                                div.header__mob-menu
+                                    ul.header__menu.clearfix#menu-mob
+                                        each link, i in links 
+                                            li.header__link: a(href="#block"+i+"") #{link}
+        div.top
+            div.container
+                div.top-left
+                    img.top__man(src="./images/top-man.png")
+                div.top-right
+                    p.top__title.
+                        Акция! При заказе
+                        трех баллонов -
+                        помпа в подарок
+                    p.top__text ДОСТАВКА ПО ВСЕЙ УКРАИНЕ
+                    a.top__btn(href="") Заказать
+                    img.top__img(src="./images/pompa.png")
+                    span.top-white
+        div.products#block0
+            div.container
+                p.title Наша вода
+                div.cards-row
+                    -for(var i = 0; i < 1; i++)
+                        +CreateCard('lorem','Ipsum','', true)
+                    -for(var i = 0; i < 5; i++)
+                        +CreateCard('lorem','Ipsum','')
+        div.about-us#block3
+            div.container
+                div.left
+                    H4 О нас
+                    div.info
+                        each el in datablock
+                            +CreateBlock( el.title, "Добывается из скважины глубиной 180 метров Юрского геологического горизонта и доочищается на производстве  компании ООО «Просперо». Наша вода имеет оптимальный солевой состав и уровень кислотности pH 7,3, за счет чего она не только полезна, но и имеет мягкий приятный вкус. Мы предлагаем воду фуллереновую, цеолитовую и с меланином – с улучшенной базой микроэлементов для вашего здоровья.")
+                    img.left__image(src="./images/about-us-girl.png")                
+                div.right
+                    p.title Сертификаты
+                    div.certificate
+                        img(src="./images/certificate.png")
+                        img(src="./images/certificate.png")
+                        img(src="./images/certificate.png")
+                        img(src="./images/certificate.png")
+        div.water
+            div.container
+                div.item-row
+                    each el, i in dataitem
+                        +Createitem('./images/water'+(i + 1)+'.png', (i + 1), el.price, el.label)
+        div.equipment#block1
+            div.container
+                p.equipment__title Предоставляемое оборудование
+                p.equipment__text Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание новых предложений. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации соответствующий условий активизации. Товарищи! консультация с широким активом требуют определения и уточнения систем массового участия.
+                div.coolers-row
+                    each el, i in dataequipment
+                        +Createequipment('./images/cooler'+(i + 1)+'.png', el.title, el.text1, el.price1, el.text2, el.price2, el.label)
+        div.order#block2
+            div.container
+                form.form
+                    div.form-name
+                        input(name="name" class="name" id="name" type="text" placeholder="Ваше имя").form__name
+                    div.form-telephone
+                        input(name="tel" class="tel" id="tel" type="tel" placeholder="Телефон").form__telephone
+                    div.form-address
+                        input(name="address" class="address" id="address" type="text" placeholder="Ваш адрес").form__telephone
+                    div.form-selected-bottel
+                        select
+                            option Баллонов
+                            option 1
+                            option 2
+                            option 3
+                    div.form-selected-type
+                        select
+                            option Украиночка с цеолитом
+                            option Эталон
+                            option Украиночка с меотидом
+                            option Эталон 0,5
+                    input(type="submit" value="Заказать").btn-send  
+        div.map#map 
+        div.footer
+            div.container
+                div.footer__logo
+                    img(src="./images/logo.png")
+                    p Акватак Украина
+                div.footer__address
+                    p.
+                        Доставка воды по Киеву и Киевской обл.:
+                        Адрес: г. Украинка, ул. Юности, 8 В
+                        (производство; розлив воды)
+                div.footer__menu#menu-footer
+                    each link, i in links 
+                        li.header__link: a(href="#block"+i+"") #{link}
+                div.icon.icon-phone
+                div.footer__telephone
+                    p.
+                        +38 044 65 05 766
+                        +38 066 05 05 000
+                        +38 066 05 05 000
+                div.footer__ps
+                    p ООО АКВАТАК УКРАИНА © 2017
+                div.footer__author
+                    p Создание  сайтов - WebCase            
+
+
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js")
+    script(src="./scripts/bundle.min.js")
+    script(src="./scripts/maskinput.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvM0CzDixRaf8jNBdl_wIGhneO2b6-YEY&callback=initMap" async defer)
