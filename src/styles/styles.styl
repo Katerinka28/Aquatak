@@ -45,7 +45,7 @@ input {
         display none
     .header__mobile 
         display block
-        width 45%
+        width 75%
         height 100%
         overflow-y auto
         background-position right top
@@ -53,9 +53,9 @@ input {
         right 100%
         top 0
         z-index 9999
-        -webkit-transition right 0.7s ease-out 0.01s
-        -moz-transition right 0.7s ease-out 0.01s
-        transition right 0.7s ease-out 0.01s
+        -webkit-transition left 0.7s ease-out 0.01s
+        -moz-transition left 0.7s ease-out 0.01s
+        transition left 0.7s ease-out 0.01s
         background #12c609
         -webkit-box-shadow 0 0 10px 5px rgba(0,0,0,0.4) inset
         -moz-box-shadow 0 0 10px 5px rgba(0,0,0,0.4) inset
@@ -80,7 +80,7 @@ input {
                     font-weight 700
                     line-height 3.202
                     text-align center
-                    width 238px
+                    width 100%
                     height 69px
                     padding-top 14px
                     font-family Lato-Bold
@@ -138,7 +138,7 @@ input {
         .top-left
             .top__man
                 width 264px
-                height 277px
+                height auto
     .top__buttom-part
         height 320px
         background-color #0eb6e7
@@ -194,20 +194,30 @@ input {
         
         .card
             background-color #ffffff
-            width 255px
-            height 234px
+            width 290px
+            // height 234px
             position relative
-            margin 10px auto
+            margin 20px auto
+            padding 10px 5px
             .text 
                 margin-left 60px
+                & > p 
+                    color  #3e5960
+                    font-size 0.813em 
+                    // width 70%
+                    height 120px
+                    line-height 20px
+                    overflow hidden    
+                    text-align left
+                    
             .image
-                width 58.5px
+                width 70px
                 height 111px
                 position absolute
                 z-index 5
                 display block
-                left -9%
-                top 11%
+                left -11px
+                top 12%
                 img 
                     display block
                     width 100%
@@ -219,30 +229,37 @@ input {
                 left -17%
                 top 39%
             h2  
+                width auto
                 color #3e5960
                 font-size 1.25em
                 font-weight 700
-                width 70%
+                height 40px
+                line-height 20px
+                overflow hidden
                 text-align left
-            p 
-                color  #3e5960
-                font-size 0.813em 
-                width 70%
-                text-align left
+            
             &__prices
+                margin-bottom 50px
             &__title
                 color  #3e5960
                 font-size 0.813em 
-            &__price 
+                text-align left
+                display block
+                padding-top 10px
+                padding-bottom 10px
+            &__price
                 width 65px
                 height 44px
                 float left
+                
                 .card__image
-                    width 22px
-                    height 22px
-                    float left
+                    width auto
+                    height 35px
                     display block
                     position relative
+                    float left
+                    display block
+                    padding-right: 2px
                 p 
                     color  #12c609
                     font-size 1.5em
@@ -250,33 +267,54 @@ input {
                     span
                         color #3e5960
                         font-size 0.45em
-            &__label             
-                background-color #e9f5f8
-                width 114px
-                height 83px
-                color  #ff7e00
-                font-size 1.559em
-                float right
-                position absolute
-                left 56%
-                bottom 0%
+                        display block
+                        
             .button 
                 background url("../images/bye-btn-bg.png") no-repeat 
                 width 201px
                 height 71px    
                 display block
                 text-decoration none   
-                padding 16%  
+                padding 32px 0 10px 38px 
                 position: absolute
                 z-index: 7
-                bottom -4%
+                bottom 0px
                 left -5%
+                color #ffffff
+                font-family Lato-Bold
+                float left
+                
+
+            &--labeled
+                .card__prices
+                    margin-bottom 50px
+                    z-index 50
+                    position relative
+                .card__label
+                    background-color #e9f5f8
+                    width 107px
+                    height 107px
+                    position absolute
+                    right 0
+                    bottom 0%
+                    background-color #e6f6e4
+                    border-top-left-radius 93%
+                    z-index 0
+                    .card__label-text
+                        color  #fa962e
+                        font-size 1.1em
+                        padding-top 44px
+                        padding-left 15px
+                        line-height 20px
+                                
 .about-us
     .left
         h4 
             color  #3e5960
             font-size 2.383em 
             text-align center
+            padding-top 25px
+            padding-bottom 20px
         h3 
             color  #12c609
             font-size 1.25em 
@@ -285,8 +323,9 @@ input {
             color  #3e5960
             font-size 0.813em
             font-weight: 300
-            text-align: justify;
-            line-height: 1.6;   
+            text-align: justify
+            line-height: 1.6   
+            
         &__image
             display none
     .right
@@ -294,16 +333,18 @@ input {
             text-align center
             color  #3e5960
             font-size 2.383em   
-            padding-bottom 15px
+            padding 25px 0
         .certificate
             img
                 border 3px solid #ffffff
-                margin 0 auto
+                margin 10px auto
                 display block
 .water 
     background-color #e9f5f8
     .item-row
+        padding 25px 0
         .item
+            padding 25px 0            
             .image
                 display block
                 float left
@@ -319,44 +360,97 @@ input {
                     position absolute
                     z-index 1
                     bottom 14%
-                    display none
+                    right 50%
+                    left -27%
                 .button
                     background url("../images/bye-btn-bg.png") no-repeat 
                     width 201px
                     height 71px    
                     display block
                     text-decoration none   
-                    padding 36px 0 0 41px
+                    padding 36px 0 18px 38px
                     position absolute
                     z-index 7
-                    bottom 30%
-                    left -6.5%
+                    bottom 27%
+                    left -10px
+                    color #ffffff
                     // &:first-child
                     //     left 20.2%
                     // &:last-child 
                     //     left 50%
-                .item__price
-                    float right
+            .item__price
+                float right
+                display block
+                width 82px
+                padding-top 150px;
+                .price__title 
+                    color  #3e5960
+                    font-size 0.937em
+                .price
+                    color #12c609
+                    font-size 3.255em
+                    floaT left
+                    font-family Lato-Black
+                .price__currency
+                        color #3e5960
+                        font-size 1.28em   
+                    
+            .item__label
+                width 151px
+                height 151px
+                background-color #0eb6e7
+                border-radius 50%
+                position absolute
+                right 50%
+                left 50%
+                z-index 10
+                .label__text
                     display block
-                    p 
-                        color  red
-                        font-size 0.937em
+                    width 49%
+                    padding-top 43px
+                    color  #ffffff
+                    font-size 0.875em
+                    font-family Lato-Black
+                    padding-left 10px
+                .label__image 
+                    display block 
+                    margin-top -48px
+                    margin-left 38px            
+            // &:first-child
+            //     .button
+            //         left 5px
+            &:nth-child(3n)
+                .image__water
+                    width 90%
+                    left -13px
+                .item__price
+                    position absolute
+                    right 50%
+                    left 71%
+                    z-index 8
+                    
 .equipment 
     background-color #e9f5f8
     &__title
+        padding 25px 0
         color:  #3e5960
         font-size: 2em
         text-align center
     &__text     
         color:  #3e5960
         font-size: 0.813em   
-        text-align justify    
+
+        text-align: center
+        line-height: 1.5em    
     .coolers-row
+        margin 20px 0
+        padding-bottom 10px
         .coolers 
             width 300px
-            height 500px
+            height 466px
             background-color #ffffff
             margin 20px 0
+            position relative
         .image
             margin 0 auto
             display block
@@ -364,28 +458,246 @@ input {
             left: 0
             img 
                 display block
+                margin 0 auto
         .cooler__title
             color  #3e5960
             font-size: 1.001em
             text-align center
-        .table1
-            width 260px
-            height 40px
-            background-color #f5f5f5
+            padding: 25px 0
+        table
             margin 0 auto
-            p 
-                float left
-                span 
-                    float right
-        .table2
-            width 260px
-            height 40px
+            .table__tr
+                background-color #f5f5f5
+                &:nth-child(2n)
+                    background-color #ffffff
+                td 
+                    padding 15px
+        
+        .cooler__label
+            background url("../images/btn-bg.png") no-repeat
             margin 0 auto
-            p 
-                float left
-                span 
-                    float right
+            width 55%
+            position absolute
+            left 0
+            right 0
+            height 100%
+            top 93%
+            .label__text
+                color #ffffff
+                font-size 0.938em
+                margin 0 auto
+                display block 
+                padding-left 61px
+                padding-top 8px
+.order
+    .form
+        border-radius: 10px;
+        background-color #05b4e4
+        width 300px;
+        height auto;
+        padding 16px
+        .form__title
+            color  #ffffff
+            font-size 2em
+            padding-bottom 20px
+        .form__name, .form__telephone
+            display block
+            width 100%
+            height 57px
+            background #e9f8f7
+            color #000000
+            padding-left 10px
+            outline none
+            border 2px solid #ffffff
+            border-radius 3px
+            font-family Lato-light
+            margin-bottom 20px
+            &::-webkit-input-placeholder{color: #000000;}
+            &:-moz-placeholder {color: #000000}
+            &::-moz-placeholder {color: #000000;}
+            &:-ms-input-placeholder {color: #000000;}
+            &:focus::-webkit-input-placeholder {color: transparent;}
+            &:focus::-moz-placeholder {color: transparent}
+            &:focus:-moz-placeholder {color: transparent}
+            &:focus:-ms-input-placeholder {color: transparent}
+            &:focus
+                border 4px solid rgba(27, 145, 179, 50)
+        .form__name
+            float right        
+        .form__address
+            display block
+            width 100%
+            height 57px
+            background #e9f8f7
+            color #000000
+            padding-left 10px
+            outline none
+            border 2px solid #ffffff
+            border-radius 3px
+            font-family Lato-light
+            margin-bottom 20px
+            &::-webkit-input-placeholder{color: #000000;}
+            &:-moz-placeholder {color: #000000;}
+            &::-moz-placeholder {color: #000000;}
+            &:-ms-input-placeholder {color: #000000;}
+            &:focus::-webkit-input-placeholder {color: transparent;}
+            &:focus::-moz-placeholder {color: transparent}
+            &:focus:-moz-placeholder {color: transparent}
+            &:focus:-ms-input-placeholder {color: transparent}
+            &:focus
+                border 4px solid rgba(27, 145, 179, 50)
+        .form-selected-bottel
+            width 100%
+            height 57px
+            float left
+            margin-bottom 20px
+            & select
+                width 100%
+                height 57px
+                background #e9f8f7
+                color #000000
+                padding-left 10px
+                outline none
+                border 2px solid #ffffff
+                border-radius 3px
+                font-family Lato-light
+        .form-selected-type
+            width 100%
+            height 57px
+            float right
+            margin-bottom 20px
+            & select 
+                width 100%
+                height 57px
+                background #e9f8f7
+                color #000000
+                padding-left 10px
+                outline none
+                border 2px solid #ffffff
+ 
+                border-radius 3px
+                font-family Lato-light      
+        .btn-send
+            display block
+            border-radius 3px
+            background-color #12c609
+            width 208px
+            height 57px  
+            margin 0 auto
+            outline none
+            border none
+            text-transform uppercase
+            margin 7px auto 15px
+            &:hover
+                background-color #1c308a
+                border 2px solid #1c308a
+                color #ffffff
+                cursor pointer
+                transition 1s  
+.footer
+    &__logo
+        margin 15px auto
+        width 50%
+        &> img
+            width: 16px
+            height: 21px
+            float left
+            display block
+            line-height: 0.928
+        &> p 
+            color #3e5960
+            font-size 0.939em
+            display block
+            text-align center
+            font-family Lato-Black
+            padding-top 6px
+    &__address
+        &> p
+            color #3e5960
+            font-size 0.813em
+            line-height: 2em
+            text-align: center 
+        &> span 
+            font-family Lato-Regular
+            color #3e5960
+            font-size 0.813em
+            line-height: 1.5em
+            text-align: center
+            display block
+    &__menu
+        width 100px
+        margin 0 auto
+        line-height 40px
+        padding 10px 0
+    &__link
+        width 100%
+        display block
+        color  #3e5960
+        font-size 0.813em
+        text-align center
+        padding 5px 0
+        & a
+            text-decoration none
+            color  #3e5960
+            text-transform uppercase
+            a:hover
+                color #62d4f8
+                      
+    .icon
+        width 19px
+        height 19px
+        margin 0 auto
+        display block
+        padding-bottom 10px
+    &__telephone
 
+        padding-bottom 10px
+        &>p 
+            width 100%
+            display block
+            color  #3e5960
+            font-size 0.813em
+            text-align center
+            padding 10px 0
+    &__ps
+        display none
+        &>p 
+            color #3e5960
+            font-size 0.75em
+            text-transform uppercase
+    &__author
+        display block
+        margin 0 auto
+        &>p  
+            color  #3e5960
+            font-size 0.75em   
+            display block  
+            text-align center  
+            
+
+
+
+
+@media screen and (min-width: 720px) 
+    .container
+        width 690px
+        margin 0 auto
+        padding 0 15px
+    .header .header__content .header__part .header__block .header__logo-text
+        width 80%
+          
+          
+
+
+
+
+
+@media screen and (min-width: 960px) 
+    .container
+        width 930px
+@media screen and (min-width: 1200px) 
+    .container
+        width 1170px                
          
                         
                     

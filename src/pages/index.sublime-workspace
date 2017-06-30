@@ -1,0 +1,806 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"block",
+				"block"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"clea",
+				"clearfix"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"lato",
+				"Lato-Black"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"hea",
+				"header-top"
+			],
+			[
+				"scr",
+				"scripts"
+			],
+			[
+				"min",
+				"minlength"
+			],
+			[
+				"h",
+				"href"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"__TIT",
+				"__title-long"
+			],
+			[
+				"__TITLE",
+				"__title-long"
+			],
+			[
+				"__",
+				"__wrap"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"header",
+				"header__cities"
+			],
+			[
+				"header-",
+				"header-mob__hide"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"tra",
+				"translateY"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"re",
+				"registration"
+			],
+			[
+				"items",
+				"items-long"
+			],
+			[
+				"serv",
+				"services-item"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ca",
+				"callback-picture"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"ser",
+				"services"
+			],
+			[
+				"__te",
+				"__telephone"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"se",
+				"services"
+			],
+			[
+				"item",
+				"items-local"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"hie",
+				"height"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"bor",
+				"border-bottom-color"
+			],
+			[
+				"Pr",
+				"Proxima-Nova-Regular"
+			],
+			[
+				"Pro",
+				"Proxima-Nova-Bold"
+			],
+			[
+				"M",
+				"Montserrat-Bold"
+			],
+			[
+				"about",
+				"about--icon"
+			],
+			[
+				"cashback-",
+				"cashback--image-left"
+			],
+			[
+				"pro",
+				"promotion__registration--date"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"button-",
+				"__button-right"
+			],
+			[
+				"data",
+				"datablog"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"ta",
+				"transparent"
+			],
+			[
+				"slyde",
+				"slyde--imagecenter"
+			],
+			[
+				"top_",
+				"top__prodaction__item"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"blo",
+				"block2-item"
+			],
+			[
+				"block2",
+				"block2title2"
+			],
+			[
+				"block1_",
+				"block1_forma2"
+			],
+			[
+				"hi",
+				"height"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"co",
+				"container2"
+			],
+			[
+				"contra",
+				"container2"
+			],
+			[
+				"fo",
+				"forma1"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"bordre",
+				"border-width"
+			],
+			[
+				"conte",
+				"container3"
+			],
+			[
+				"backg",
+				"Background"
+			],
+			[
+				"blog",
+				"blog_text"
+			],
+			[
+				"Brew",
+				"Brewhouses"
+			],
+			[
+				"tova",
+				"tovar"
+			],
+			[
+				"tovar",
+				"tovar1"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"Wi",
+				"width"
+			],
+			[
+				"foo",
+				"footer_location"
+			],
+			[
+				"slogan",
+				"slogan__text"
+			],
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"c",
+				"clearfix"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"bod",
+				"border-color"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"s",
+				"slider"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"st",
+				"styles"
+			],
+			[
+				"bloc",
+				"block"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"li",
+				"link"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				" menu",
+				"View: Toggle Menu"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Satisfy Dependencies"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"cp>minipum",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/nj/src/pages/index.pug",
+		"/D/Alento/src/pages/index.pug",
+		"/D/Alento/src/Mixin/Mixin.pug",
+		"/D/nj/src/styles/styles.styl",
+		"/D/nj/src/scripts/scripts.js",
+		"/D/Aquatak/gulpfile.js",
+		"/D/Aquatak/src/styles/fonts.styl",
+		"/D/Aquatak/src/styles/font-image.css",
+		"/D/Aquatak/src/pages/404.pug",
+		"/D/Aquatak/src/scripts/scripts.js",
+		"/D/Aquatak/src/styles/styles.styl",
+		"/C/Users/Developer/AppData/Local/Temp/Temp1_icomoon (5).zip/style.css",
+		"/D/nj/src/styles/fonts.styl",
+		"/D/nj/src/styles/font-image.css",
+		"/D/Alento/src/styles/fonts.styl",
+		"/D/Alento/src/index.pug",
+		"/D/Aquatak/src/styles/reset.css",
+		"/D/Aquatak/src/styles/placeholder.styl",
+		"/D/Aquatak/src/pages/index.pug",
+		"/D/Aquatak/src/Mixin/Mixin.pug",
+		"/C/Users/Developer/Desktop/hhh.html",
+		"/D/анимац прилип меню/AnimatedHeader/index.html",
+		"/D/Aquatak/dist/scripts/bundle.min.js",
+		"/D/Aquatak/dist/css/bundle.min.css",
+		"/D/nj/dist/scripts/maskinput.js",
+		"/D/анимац прилип меню/AnimatedHeader/js/cbpAnimatedHeader.js",
+		"/D/анимац прилип меню/AnimatedHeader/js/classie.js",
+		"/D/якоря и плавный переход/index.html",
+		"/D/Мобильно_меню/css/general.css",
+		"/D/якоря и плавный переход/js/script.js",
+		"/D/Мобильно_меню/html/header.html",
+		"/D/Мобильно_меню/js/main.js",
+		"/C/Users/Developer/AppData/Local/Temp/Temp1_icomoon (4).zip/style.css",
+		"/D/Мобильно_меню/css/main.css",
+		"/D/Мобильно_меню/css/svg/svg.css",
+		"/D/nj/gulpfile.js",
+		"/D/nj/src/styles/placeholder.styl",
+		"/D/nj/src/Mixin/Mixin.pug",
+		"/C/Users/Developer/Desktop/in.html",
+		"/D/NJlocal/src/pages/index.pug",
+		"/D/NJlocal/src/styles/styles.styl",
+		"/D/nj/src/pages/index.html",
+		"/D/Alento/src/styles/styles.styl",
+		"/D/NJlocal/src/scripts/scripts.js",
+		"/D/NJlocal/gulpfile.js",
+		"/D/NJlocal/src/styles/fonts.styl",
+		"/D/NJlocal/src/styles/reset.css",
+		"/D/Alento/reset.css",
+		"/D/Alento/style.css",
+		"/C/Users/Developer/AppData/Local/Temp/Temp1_icomoon (3).zip/style.css",
+		"/D/NJ local/package.json",
+		"/D/NJ local/src/Mixin/Mixin.pug",
+		"/D/NJ local/src/pages/index.pug",
+		"/D/NJ local/src/scripts/scripts.js",
+		"/D/NJ local/src/styles/font-image.css",
+		"/D/NJ local/src/styles/styles.styl",
+		"/D/NJ local/gulpfile.js",
+		"/D/NJ local/src/scripts/scripts",
+		"/D/NJ local/src/styles/fonts.styl",
+		"/C/Users/Developer/AppData/Local/Temp/Temp1_icomoon (2).zip/style.css",
+		"/C/Users/Developer/AppData/Local/Temp/Temp1_icomoon.zip/style.css",
+		"/C/Users/Developer/AppData/Local/Temp/Temp1_icomoon (1).zip/style.css",
+		"/D/Alento/dist/css/bundle.min.css",
+		"/D/Alento/package.json",
+		"/D/Alento/gulpfile.js",
+		"/D/Alento/index.html",
+		"/D/Alento/dist/index.html",
+		"/D/test/src/layout.pug",
+		"/D/Alento/src/styles/reset.styl",
+		"/D/Alento/mixins.less",
+		"/D/Alento/src/images/Logo.png",
+		"/D/test/src/index.pug",
+		"/D/test/wp-content/themes/safederal/index.html",
+		"/D/Alento/block2.1.png",
+		"/D/test/src/style/style.styl",
+		"/D/test/src/partials/head/head.pug",
+		"/D/test/src/layout/layout.pug",
+		"/D/test/wp-content/themes/safederal/rabota/style.css",
+		"/D/test/gulpfile.js",
+		"/D/test/src/pages/index.pug",
+		"/D/test/src/partials/head.pug",
+		"/D/test/wp-content/themes/safederal/layout/layout.html",
+		"/D/test/package.json",
+		"/D/test/src/style.styl",
+		"/D/test/layout/layout.pug",
+		"/D/test/index/index.pug",
+		"/D/test/style/style.styl",
+		"/C/Users/Developer/Downloads/gulpfile.js",
+		"/C/Users/Developer/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/D/test/style.css",
+		"/D/test/build/html/index.html",
+		"/C/Users/Developer/Desktop/Psfsfs/gulpfile.js",
+		"/C/Users/Developer/Desktop/Psfsfs/style.pug",
+		"/C/Users/Developer/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Developer/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Developer/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"3",
+			"fa962e",
+			"float",
+			"#map",
+			"png",
+			"label",
+			"5px ",
+			"18",
+			"5px",
+			"label",
+			";",
+			":",
+			";\n",
+			":",
+			"map",
+			"02",
+			"__long",
+			"{",
+			";",
+			":",
+			"mobile",
+			"fonts",
+			"error",
+			"name",
+			".error",
+			"25px",
+			":",
+			"attern=\"^[+()0-9]+$\"",
+			"                ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"                    ",
+			"                   ",
+			"                  ",
+			"                 ",
+			"                ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"width",
+			".services .services-item .items-local__item:first-child",
+			"                    \n",
+			"{c",
+			"@",
+			"block",
+			"@content",
+			"color:#000000",
+			"color #ffffff",
+			"          ",
+			"block",
+			"}",
+			"{",
+			" {",
+			"color",
+			" {",
+			"color",
+			".header--menu li",
+			".callback--",
+			"container",
+			"wra",
+			"=",
+			"local",
+			"servises",
+			" div.top\n                div.container\n            div.servises    \n                div.container\n            div.promotion                   \n                div.container\n                    div.registration\n                    div.counter\n                    div.offer\n                    div.cashback\n            div.about\n                div.container\n            div.faq    \n                div.container\n            div.feedback    \n                div.container\n            div.review\n                div.container\n            div.map\n            div.footer   \n",
+			"button",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"img",
+			"image",
+			".top__prodaction a:hover\n  \n  border-bottom-style solid\n  border-bottom-width 4px\n  border-color #ed1c24  ",
+			"datablog",
+			"%\n",
+			"Механически",
+			"decor",
+			"25%",
+			"15px",
+			"Блог",
+			"6px",
+			" \n",
+			"/dist",
+			"100px",
+			"<",
+			"wp-content/themes/tesla",
+			"width ",
+			"width",
+			"сontainer",
+			"сonteiner",
+			"//netbook",
+			">\n",
+			"slider",
+			"37px",
+			"screen and",
+			"\\"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

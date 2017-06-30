@@ -1,10 +1,10 @@
 include /mixin/mixin
 -var links=['Наша вода', 'Оборудование', 'Доставка', 'О компании']
 -var datablock=[{title:"Питьевая вода ТМ Украиночка"}, {title:"Питьевая вода ТМ Эталон"}]
--var dataitem=[{price:"52"}, {price:"72"}, {price:"82", label:true}]
-
-
--var dataequipment=[{title:"Продажа настольных кулеров:", text1:"Электронные", price1: "2500 грн", text2:'Компрессорные', price2: "2500 грн"}, {title:"Аренда кулеров:", label:true, text1:"1 месяц", price1:"100 грн"} , {title:"Продажа напольных кулеров:" , text1:"Электронные", price1: "2500 грн", text2:'Компрессорные', price2: "2500 грн" }]
+-var dataitem=[{title:"1 баллон", price:"52"}, {title:"2 баллона", price:"72"}, {title:"3 баллона", price:"82", label:true}]
+-var dataequipment=[{img: './images/cooler1.png',title:"Продажа настольных кулеров:"}, {img: './images/cooler2.png',title:"Аренда кулеров:", label:true} , {img: './images/cooler3.png',title:"Продажа напольных кулеров:"}]
+-var rows = [['Электронные', '2500 грн'],['Компрессорные','2500 грн']]
+-var row = [['1 месяц', '100 грн']]
 
 doctype html!
 
@@ -63,11 +63,11 @@ html
         div.products#block0
             div.container
                 p.products__title Наша вода
-                div.cards-row
-                    -for(var i = 0; i < 1; i++)
-                        +CreateCard('lorem','Ipsum','', true)
+                div.cards-row.clearfix
+                    
+                    +CreateCard('Украиночка','сбалансированна содержанием солей кальция и магния. Предназначена для ежедневного употребления, как в свежем виде, так и для приготовления пищи. В процессе кипячения возможно незначительное выпадение в осадок солей кальция и магния, что является безопасным для здоровья и свидетельствует о натуральности происхождения воды.','', true)&attributes({class:'card--labeled'})
                     -for(var i = 0; i < 5; i++)
-                        +CreateCard('lorem','Ipsum','')
+                        +CreateCard('Украиночка','сбалансированна содержанием солей кальция и магния. Предназначена для ежедневного употребления, как в свежем виде, так и для приготовления пищи. В процессе кипячения возможно незначительное выпадение в осадок солей кальция и магния, что является безопасным для здоровья и свидетельствует о натуральности происхождения воды.','')
         div.about-us#block3
             div.container
                 div.left
@@ -87,27 +87,32 @@ html
             div.container
                 div.item-row.clearfix
                     each el, i in dataitem
-                        +Createitem('./images/water'+(i + 1)+'.png', (i + 1), el.price, el.label)
+                        +Createitem('./images/water'+(i + 1)+'.png', el.title, el.price, el.label)
         div.equipment#block1
             div.container
                 p.equipment__title Предоставляемое оборудование
                 p.equipment__text Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание новых предложений. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации соответствующий условий активизации. Товарищи! консультация с широким активом требуют определения и уточнения систем массового участия.
                 div.coolers-row
-                    each el, i in dataequipment
-                        +Createequipment('./images/cooler'+(i + 1)+'.png', el.title, el.text1, el.price1, el.text2, el.price2, el.label)
+                    //- each el, i in dataequipment
+
+                    +Createequipment(dataequipment[0].img, dataequipment[0].title, rows , dataequipment[0].label)
+                    +Createequipment(dataequipment[1].img, dataequipment[1].title, row , dataequipment[1].label)
+                    +Createequipment(dataequipment[2].img, dataequipment[2].title, rows , dataequipment[2].label)
         div.order#block2
             div.container
                 form.form
+                    div.form__title
+                        p.title.icon-ico Доставка за час
                     div.form-name
                         input(name="name" class="name" id="name" type="text" placeholder="Ваше имя").form__name
                     div.form-telephone
                         input(name="tel" class="tel" id="tel" type="tel" placeholder="Телефон").form__telephone
                     div.form-address
-                        input(name="address" class="address" id="address" type="text" placeholder="Ваш адрес").form__telephone
+                        input(name="address" class="address" id="address" type="text" placeholder="Ваш адрес").form__address
                     div.form-selected-bottel
                         select
                             option Баллонов
-                            option 1
+                            option 1 
                             option 2
                             option 3
                     div.form-selected-type
@@ -120,23 +125,22 @@ html
         div.map#map 
         div.footer
             div.container
-                div.footer__logo
+                div.footer__logo.clearfix
                     img(src="./images/logo.png")
                     p Акватак Украина
                 div.footer__address
-                    p.
-                        Доставка воды по Киеву и Киевской обл.:
+                    p Доставка воды по Киеву и Киевской обл.:
+                    span.
                         Адрес: г. Украинка, ул. Юности, 8 В
                         (производство; розлив воды)
                 div.footer__menu#menu-footer
                     each link, i in links 
-                        li.header__link: a(href="#block"+i+"") #{link}
+                        li.footer__link: a(href="#block"+i+"") #{link}
                 div.icon.icon-phone
                 div.footer__telephone
-                    p.
-                        +38 044 65 05 766
-                        +38 066 05 05 000
-                        +38 066 05 05 000
+                    p +38 044 65 05 766
+                    p +38 066 05 05 000
+                    p +38 066 05 05 000
                 div.footer__ps
                     p ООО АКВАТАК УКРАИНА © 2017
                 div.footer__author

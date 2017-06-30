@@ -1,14 +1,14 @@
 
 mixin CreateCard(title, description, image, label)
-    div.card
+    div.card.clearfix(class=attributes.class)
         div.image
             img(src="./images/water.png")
         img.image__bg(src="./images/bg-leaves.png")
         div.text
             h2 #{title}
             p #{description}
-            div.card__prices
-                p.card__title Цена:
+            div.card__prices.clearfix
+                span.card__title Цена:
                 div.card__price
                     img.card__image(src="./images/water1-min.png")
                     p 52
@@ -22,41 +22,42 @@ mixin CreateCard(title, description, image, label)
                     p 85
                         span грн
         if(label)
-            div.card__label + помпа в подарок
-        a(href="").button.icon-bye-btn ЗАКАЗАТЬ
+            div.card__label
+                h6.card__label-text + помпа    в подарок
+        a(href="#block2").button#button ЗАКАЗАТЬ
+            span.icon-bye-btn
 mixin CreateBlock(title, content)
     h3 #{title}
     p #{content}
-mixin Createitem(image, number, price, label)
-    div.item
+mixin Createitem(image, title, price, label)
+    div.item.clearfix
         div.image
             img.image__water(src=image)
             img.image__water-bg(src="./images/bg-leaves.png")
-            a(href="").button.icon-bye-btn ЗАКАЗАТЬ
+            a(href="#block2").button#button ЗАКАЗАТЬ
+                span.icon-bye-btn
         div.item__price
-            p #{number}
-            -if(i<= 1)
-                p  баллон
-            -else 
-                p баллона
-            p #{price}
+            div.price__title
+                p #{title}
+            div.price        
+                p #{price}
+            div.price__currency
                 span грн
         if(label)
             div.item__label 
                 p.label__text + помпа в подарок
                 img.label__image(src="./images/pompa-min.png")    
-mixin Createequipment(image, title, text1, price1, text2, price2, label)
+mixin Createequipment(image, title, rows, label)
     div.coolers
         div.image
             img(src=image)
         div.cooler__title
             p #{title}
-        div.table1
-            p #{text1}
-                span #{price1}
-        div.table2
-            p #{text2}
-                span #{price2}
+        TABLE.table&attributes(attributes)
+            each row, i in rows 
+               TR.table__tr
+                   each td , i in row
+                       TD.table__td(data-th='')=td
         if(label)
             div.cooler__label 
                 p.label__text Акция!     
