@@ -1,24 +1,26 @@
+
 mixin CreateCard(title, description, image, label)
     div.card
         div.image
             img(src="./images/water.png")
-            img.image__bg(src="./images/bg-leaves.png")
-        h2 #{title}
-        p #{description}
-        div.card__prices
-            p.card__title Цена:
-            div.card__price
-                img(src="./images/water1-min.png")
-                p 52
-                    span грн
-            div.card__price
-                img(src="./images/water2-min.png")
-                p 75
-                    span грн
-            div.card__price
-                img(src="./images/water3-min.png")
-                p 85
-                    span грн
+        img.image__bg(src="./images/bg-leaves.png")
+        div.text
+            h2 #{title}
+            p #{description}
+            div.card__prices
+                p.card__title Цена:
+                div.card__price
+                    img.card__image(src="./images/water1-min.png")
+                    p 52
+                        span грн
+                div.card__price
+                    img.card__image(src="./images/water2-min.png")
+                    p 75
+                        span грн
+                div.card__price
+                    img.card__image(src="./images/water3-min.png")
+                    p 85
+                        span грн
         if(label)
             div.card__label + помпа в подарок
         a(href="").button.icon-bye-btn ЗАКАЗАТЬ
@@ -34,7 +36,7 @@ mixin Createitem(image, number, price, label)
         div.item__price
             p #{number}
             -if(i<= 1)
-                p баллон
+                p  баллон
             -else 
                 p баллона
             p #{price}

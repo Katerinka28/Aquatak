@@ -19,12 +19,16 @@ html
     body
         div.header.clearfix
             div.container.clearfix
-                div.header__content    
+                div.header__content
+                    div.header__mob-icon
+                        div.header__mob-line
+                        div.header__mob-line
+                        div.header__mob-line    
                     div.header__part
                         div.header__block
-                            div.header__logo-wrapper
+                            div.header__logo-wrapper.clearfix
                                 img(src="./images/logo.png")
-                            p.header__logo-text Акватак Украина
+                            p.header__logo-text.clearfix Акватак Украина
                         div.header__block.header-mob__hide
                             ul.header__menu
                                 each link, i in links 
@@ -33,10 +37,7 @@ html
                             a.telephone-icon.icon-phone(href="")
                         div.header__block.header-mob__hide       
                             a.header__telephone +38 066 05 05 000     
-                    div.header__mob-icon
-                        div.header__mob-line
-                        div.header__mob-line
-                        div.header__mob-line
+                    
                     div.header__mobile
                         div.header__mob-wrapper
                             div.header__mob-content
@@ -45,21 +46,23 @@ html
                                         each link, i in links 
                                             li.header__link: a(href="#block"+i+"") #{link}
         div.top
-            div.container
-                div.top-left
-                    img.top__man(src="./images/top-man.png")
-                div.top-right
-                    p.top__title.
-                        Акция! При заказе
-                        трех баллонов -
-                        помпа в подарок
-                    p.top__text ДОСТАВКА ПО ВСЕЙ УКРАИНЕ
-                    a.top__btn(href="") Заказать
-                    img.top__img(src="./images/pompa.png")
-                    span.top-white
+            div.top__top-part
+                div.container
+                    div.top-left
+                        img.top__man(src="./images/top-man.png")
+            div.top__buttom-part
+                div.container        
+                    div.top-right
+                        p.top__title.
+                            Акция! При заказе
+                            трех баллонов -
+                            помпа в подарок
+                        p.top__text ДОСТАВКА ПО ВСЕЙ УКРАИНЕ
+                        a.top__btn(href="") Заказать
+                        img.top__img(src="./images/pompa.png")
         div.products#block0
             div.container
-                p.title Наша вода
+                p.products__title Наша вода
                 div.cards-row
                     -for(var i = 0; i < 1; i++)
                         +CreateCard('lorem','Ipsum','', true)
@@ -82,7 +85,7 @@ html
                         img(src="./images/certificate.png")
         div.water
             div.container
-                div.item-row
+                div.item-row.clearfix
                     each el, i in dataitem
                         +Createitem('./images/water'+(i + 1)+'.png', (i + 1), el.price, el.label)
         div.equipment#block1
