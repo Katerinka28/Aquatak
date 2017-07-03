@@ -28,13 +28,13 @@ html
                         div.header__block
                             div.header__logo-wrapper.clearfix
                                 img(src="./images/logo.png")
-                            p.header__logo-text.clearfix Акватак Украина
+                                p.header__logo-text Акватак Украина
                         div.header__block.header-mob__hide
                             ul.header__menu
                                 each link, i in links 
                                     li.header__link: a(href="#block"+i+"") #{link}
                         div.header__block
-                            a.telephone-icon.icon-phone(href="")
+                            a.telephone-icon.icon-phone(tel="+3809522222222")
                         div.header__block.header-mob__hide       
                             a.header__telephone +38 066 05 05 000     
                     
@@ -50,6 +50,7 @@ html
                 div.container
                     div.top-left
                         img.top__man(src="./images/top-man.png")
+                    
             div.top__buttom-part
                 div.container        
                     div.top-right
@@ -72,27 +73,28 @@ html
             div.container
                 div.left
                     H4 О нас
-                    div.info
+                    div.info.clearfix
                         each el in datablock
                             +CreateBlock( el.title, "Добывается из скважины глубиной 180 метров Юрского геологического горизонта и доочищается на производстве  компании ООО «Просперо». Наша вода имеет оптимальный солевой состав и уровень кислотности pH 7,3, за счет чего она не только полезна, но и имеет мягкий приятный вкус. Мы предлагаем воду фуллереновую, цеолитовую и с меланином – с улучшенной базой микроэлементов для вашего здоровья.")
-                    img.left__image(src="./images/about-us-girl.png")                
-                div.right
+                    div.left__image-girl
+                        img.left__image(src="./images/about-us-girl.png")                
+                div.right.clearfix
                     p.title Сертификаты
                     div.certificate
                         img(src="./images/certificate.png")
                         img(src="./images/certificate.png")
                         img(src="./images/certificate.png")
                         img(src="./images/certificate.png")
-        div.water
+        div.water.clearfix
             div.container
                 div.item-row.clearfix
                     each el, i in dataitem
                         +Createitem('./images/water'+(i + 1)+'.png', el.title, el.price, el.label)
-        div.equipment#block1
+        div.equipment.clearfix#block1
             div.container
                 p.equipment__title Предоставляемое оборудование
                 p.equipment__text Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание новых предложений. Повседневная практика показывает, что новая модель организационной деятельности способствует подготовки и реализации соответствующий условий активизации. Товарищи! консультация с широким активом требуют определения и уточнения систем массового участия.
-                div.coolers-row
+                div.coolers-row.clearfix
                     //- each el, i in dataequipment
 
                     +Createequipment(dataequipment[0].img, dataequipment[0].title, rows , dataequipment[0].label)
@@ -100,7 +102,7 @@ html
                     +Createequipment(dataequipment[2].img, dataequipment[2].title, rows , dataequipment[2].label)
         div.order#block2
             div.container
-                form.form
+                form.form.clearfix
                     div.form__title
                         p.title.icon-ico Доставка за час
                     div.form-name
@@ -141,10 +143,10 @@ html
                     p +38 044 65 05 766
                     p +38 066 05 05 000
                     p +38 066 05 05 000
-                div.footer__ps
+                div.footer__ps.clearfix
                     p ООО АКВАТАК УКРАИНА © 2017
-                div.footer__author
-                    p Создание  сайтов - WebCase            
+                div.footer__author.clearfix
+                    p Создание  сайтов -<a href="http://webcase.studio/ru/"> WebCase            
 
 
 

@@ -100,7 +100,7 @@ $(document).ready(function() {
             }
             drawer.classList.remove('is-mobile-header');
             btn.classList.add('sm-visible--active');
-            btn1.classList.remove('sm-visible--active-visible')
+            btn.classList.remove('sm-visible--active-visible')
         }
         e.stopPropagation()
     }

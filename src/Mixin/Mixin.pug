@@ -48,7 +48,7 @@ mixin Createitem(image, title, price, label)
                 p.label__text + помпа в подарок
                 img.label__image(src="./images/pompa-min.png")    
 mixin Createequipment(image, title, rows, label)
-    div.coolers
+    div.coolers.clearfix
         div.image
             img(src=image)
         div.cooler__title
@@ -59,7 +59,7 @@ mixin Createequipment(image, title, rows, label)
                    each td , i in row
                        TD.table__td(data-th='')=td
         if(label)
-            div.cooler__label 
+            div.cooler__label.clearfix
                 p.label__text Акция!     
 
 
