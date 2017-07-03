@@ -29,8 +29,8 @@
                 <li class="header__link"><a href="#block3">О компании</a></li>
               </ul>
             </div>
-            <div class="header__block"><a class="telephone-icon icon-phone" tel="+3809522222222"></a></div>
-            <div class="header__block header-mob__hide">      <a class="header__telephone">+38 066 05 05 000     </a></div>
+            <div class="header__block"><a class="telephone-icon icon-phone" href="#call-dialog" id="call-trigger"></a></div>
+            <div class="header__block header-mob__hide">      <a class="header__telephone" href="tel:+380660505000">+38 066 05 05 000     </a></div>
           </div>
           <div class="header__mobile">
             <div class="header__mob-wrapper">
@@ -63,7 +63,7 @@
               трех баллонов -
               помпа в подарок
             </p>
-            <p class="top__text">ДОСТАВКА ПО ВСЕЙ УКРАИНЕ</p><a class="top__btn" href="">Заказать</a><img class="top__img" src="./images/pompa.png"/>
+            <p class="top__text">ДОСТАВКА ПО ВСЕЙ УКРАИНЕ</p><a class="top__btn" href="#block2">Заказать</a><img class="top__img" src="./images/pompa.png"/>
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@
         </div>
         <div class="right clearfix">
           <p class="title">Сертификаты</p>
-          <div class="certificate"><img src="./images/certificate.png"/><img src="./images/certificate.png"/><img src="./images/certificate.png"/><img src="./images/certificate.png"/></div>
+          <div class="certificate clearfix"><a class="image-link" href="./images/certificate.png"><img src="./images/certificate.png"/></a><a class="image-link" href="./images/certificate.png"><img src="./images/certificate.png"/></a><a class="image-link" href="./images/certificate.png"><img src="./images/certificate.png"/></a><a class="image-link" href="./images/certificate.png"><img src="./images/certificate.png"/></a></div>
         </div>
       </div>
     </div>
@@ -306,7 +306,7 @@
     </div>
     <div class="order" id="block2">
       <div class="container">
-        <form class="form clearfix">
+        <form class="form clearfix" id="form">
           <div class="form__title">
             <p class="title icon-ico">Доставка за час</p>
           </div>
@@ -316,15 +316,15 @@
           <div class="form-telephone">
             <input class="tel form__telephone" name="tel" id="tel" type="tel" placeholder="Телефон"/>
           </div>
-          <div class="form-address">
+          <div class="form-address clearfix">
             <input class="address form__address" name="address" id="address" type="text" placeholder="Ваш адрес"/>
           </div>
-          <div class="form-selected-bottel">
-            <select>
+          <div class="form-selected-bottel" id="selected-bottel">
+            <select name="select">
               <option>Баллонов</option>
-              <option>1 </option>
-              <option>2</option>
-              <option>3</option>
+              <option value="1">1 </option>
+              <option value="2"> 2</option>
+              <option value="3">3</option>
             </select>
           </div>
           <div class="form-selected-type">
@@ -366,14 +366,23 @@
           <p>ООО АКВАТАК УКРАИНА © 2017</p>
         </div>
         <div class="footer__author clearfix">
-          <p>Создание  сайтов -<a href="http://webcase.studio/ru/"> WebCase            </p>
+          <p>Создание  сайтов -<a href="http://webcase.studio/ru/">WebCase            </a></p>
         </div>
       </div>
     </div>
   </body>
+  <div class="zoom-anim-dialog mfp-hide clearfix" id="thanks">
+    <div class="left"><img class="thanks__image" src="./images/thanks_image.png"/></div>
+    <div class="right">
+      <p class="thanks__title">Спасибо за Ваш заказ!</p>
+      <p class="thanks__text">В ближайшее время с Вами свяжется наш менеджер</p>
+    </div>
+  </div>
+  <div class="zoom-anim-dialog mfp-hide clearfix" id="call-dialog"><a href="tel:+380660505000">+380660505000</a><a href="tel:+380500505000">+380500505000    </a><a href="tel:+380950505000">+380950505000</a></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
-  <script src="./scripts/bundle.min.js"></script>
+  <script src="./scripts/jquery.magnific-popup.js"></script>
   <script src="./scripts/maskinput.js"></script>
+  <script src="./scripts/bundle.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvM0CzDixRaf8jNBdl_wIGhneO2b6-YEY&amp;callback=initMap" async="async" defer="defer"></script>
 </html>

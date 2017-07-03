@@ -80,9 +80,9 @@ $(document).ready(function() {
     const drawer = $('.header__mobile')[0];
 
     btn.addEventListener('click', function(e) {
-        console.log(1)
-        // wrapper.classList.toggle('wrapper--active');
-        // btn1.classList.add('sm-visible--active-visible')
+        
+        wrapper.classList.toggle('wrapper--active')
+        btn.classList.add('sm-visible--active-visible')
         drawer.classList.add('is-mobile-header');
         e.stopPropagation();
     });
@@ -104,20 +104,94 @@ $(document).ready(function() {
         }
         e.stopPropagation()
     }
+    $('#call-trigger').magnificPopup({
+        
+    })
+    $("#form").validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            tel: {
+                required: true
+            },
+            address: {
+                required: true
+            },
+            select: {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: "",
+                minlength: ""
+            },
+            tel: {
+                required: "",
+            },
+            address: {
+                required: "",
+            }
+        },
+
+        submitHandler: function(form) {
+            $.magnificPopup.open({
+                items: {
+                    src: '#thanks'
+                },
+                closeOnContentClick: true,
+                closeOnBgClick: true,
+                type: 'inline'
+            });
+        },
+
+
+            
+    });
+    jQuery(function($) {
+        $("#tel").mask("+38(099) 999-9999")
+    });
+    $('.image-link').magnificPopup({
+
+            type: 'image',
+            mainClass: 'mfp-with-zoom',
+            zoom: {
+                enabled: true, // By default it's false, so don't forget to enable it
+
+                duration: 300, // duration of the effect, in milliseconds
+                easing: 'ease-in-out', // CSS transition easing function
+
+                // The "opener" function should return the element from which popup will be zoomed in
+                // and to which popup will be scaled down
+                // By defailt it looks for an image tag:
+                opener: function(openerElement) {
+                    // openerElement is the element on which popup was initialized, in this case its <a> tag
+                    // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                    return openerElement.is('img') ? openerElement : openerElement.find('img');
+                }  
+            }
+
+        });
+
 });
 
 
+// $('.test-popup-link').magnificPopup({
+//   type: 'image'
+//   // other options
+// });
+// // $("#button").on("click", "a", function(event) {
+// //         //отменяем стандартную обработку нажатия по ссылке
+// //         event.preventDefault();
 
-// $("#button").on("click", "a", function(event) {
-//         //отменяем стандартную обработку нажатия по ссылке
-//         event.preventDefault();
+// //         //забираем идентификатор бока с атрибута href
+// //         var id = $(this).attr('href'),
 
-//         //забираем идентификатор бока с атрибута href
-//         var id = $(this).attr('href'),
+// //             //узнаем высоту от начала страницы до блока на который ссылается якорь
+// //             top = $(id).offset().top;
 
-//             //узнаем высоту от начала страницы до блока на который ссылается якорь
-//             top = $(id).offset().top;
-
-//         //анимируем переход на расстояние - top за 1500 мс
-//         $('body,html').animate({ scrollTop: top }, 1500);
-//     });
+// //         //анимируем переход на расстояние - top за 1500 мс
+// //         $('body,html').animate({ scrollTop: top }, 1500);
+// //     });

@@ -2,7 +2,8 @@
 @import './fonts'
 @import './reset.css'
 @import './font-image.css'
-
+@import './popup-with-animation.css'
+@import './magnific-popup.css'
 
 * 
     margin 0
@@ -36,7 +37,20 @@ input {
 #map
     width 100%
     height 400px
-    background-color grey   
+    background-color grey  
+#call-dialog
+    width 100%
+    height auto
+    background-color #ffffff
+    &>a 
+        float none
+        text-decoration none
+        color #000000 
+        width 50%
+        display block
+        margin 20px auto
+        font-size 20px
+        text-align center
 .header
     width 100%
     height 64px
@@ -112,7 +126,7 @@ input {
             .header__block
                 .header__logo-wrapper
                     margin 0 auto
-                    width 85%
+                    width 75%
                     float left
                     display block
                     & > img
@@ -135,6 +149,7 @@ input {
                     margin-top 7px
                     margin-right 10px
                     text-decoration none
+                    
 .top
     .top__top-part
         background url('../images/top-bg.png') no-repeat
@@ -342,10 +357,19 @@ input {
             font-size 2.383em   
             padding 25px 0
         .certificate
-            img
-                border 3px solid #ffffff
-                margin 10px auto
-                display block
+            .image-link
+                position relative
+                width 100%
+                height auto
+                &:before
+                    position absolute
+                    left 50%
+                    right 50%
+                    background url("./images/zoom.png") no-repeat
+                img
+                    border 3px solid #ffffff
+                    margin 10px auto
+                    display block
 .water 
     background-color #e9f5f8
     .item-row
@@ -503,6 +527,32 @@ input {
         background-color #05b4e4
         width 100%
         padding 16px
+        margin-bottom 10px
+        // .form-name, .form-telephone, .form-address
+        //     position relative
+        input.error
+            border 1px solid red !important
+        label.error
+            font-size: 0
+            position absolute
+            left 0
+            &:before
+                content '!'
+                position absolute
+                background-color #f00
+                border-radius 50%
+                width 15px
+                font-size 11px
+                line-height 15px
+                height 15px
+                text-align center
+                left 7%
+                top 10%
+                transform translateY(-371%)translateX(-39%)
+                display block
+                color #ffffff
+        .form-name, .form-telephone, .form-address
+            position relative        
         .form__title
             color  #ffffff
             font-size 2em
@@ -521,6 +571,7 @@ input {
             border-radius 3px
             font-family Lato-light
             margin-bottom 20px
+            position relative
             &::-webkit-input-placeholder{color: #000000;}
             &:-moz-placeholder {color: #000000}
             &::-moz-placeholder {color: #000000;}
@@ -531,8 +582,7 @@ input {
             &:focus:-ms-input-placeholder {color: transparent}
             &:focus
                 border 4px solid rgba(27, 145, 179, 50)
-        .form__name
-            float right        
+             
         .form__address
             display block
             width 100%
@@ -545,6 +595,7 @@ input {
             border-radius 3px
             font-family Lato-light
             margin-bottom 20px
+            position relative
             &::-webkit-input-placeholder{color: #000000;}
             &:-moz-placeholder {color: #000000;}
             &::-moz-placeholder {color: #000000;}
@@ -649,7 +700,7 @@ input {
             text-decoration none
             color  #3e5960
             text-transform uppercase
-            a:hover
+            &:hover
                 color #62d4f8
                       
     .icon
@@ -687,11 +738,74 @@ input {
             & > a
                 color #3e5960
                 text-decoration none  
-            
+#thanks
+    width 690px
+    height 303px
+    margin 0 auto
+    background-color #ffffff
+    border-radius 10px
+    padding 36px
+    .left
+        width 35%
+        float left
+        .thanks__image
+            width 100% 
+            display block
+    .right
+        width 60%
+        float right
+        padding-top 43px
+        .thanks__title
+            color  #12c609 
+            font-size 38px 
+            text-align left 
+            padding-bottom 36px 
+        .thanks__text
+            color  #3e5960
+            font-size 14.99px
+            line-height 22px
+            text-align left 
+            font-family Lato-Regular                     
+.mfp-close-btn-in .mfp-close
+    color #333
+    position absolute
+    left 76%
+    right 50%
+.image-zoom 
+    margin:30px 
+    float left
+    cursor pointer
+    max-height 100px
+
+
+.popup 
+    position absolute
+    height 100%
+    width 100%
+    top 0
+    left 0
+    display none
+    text-align center
+
+
+.popup_bg 
+    background rgba(0,0,0,0.4)
+    position absolute
+    z-index 1
+    height 100%
+    width 100%
 
 
 
-
+.popup_img 
+    position relative
+    margin 0 auto
+    z-index 
+    max-height 94%
+    max-width 94%
+    margin 1% 0 0 0
+    
+    
 @media screen and (min-width: 720px) 
     .container
         width 690px
@@ -748,8 +862,8 @@ input {
                 box-shadow 0 0 10px rgba(0,0,0,0.5)
                 float left
                 margin 8px 10px
-                // &:last-child
-                //     float none
+                &:last-child
+                    margin-left 26%
     .order
         margin-bottom 25px
         .form
@@ -848,18 +962,23 @@ input {
             width 562px
             height 482px
             padding 62px
-            right: 10%
+            right: 0
+            left 40%
             transform: translateY(30%)
-            .form__address 
+            .form-address 
                 width 436px
-            .form__name
+                margin-top 80px
+            .form-name
                 float left
                 width 208px
                 margin-right 21px
-            .form__telephone
+
+            .form-telephone
                 width 208px
+                float right
             .form-selected-bottel
                 width 112px
+
             .form-selected-type
                 width 308px
 
@@ -893,7 +1012,7 @@ input {
 
         &__ps
             display block
-            float none
+            
             width 30%
         &__author 
             display block 
@@ -912,7 +1031,6 @@ input {
                     .header__logo-wrapper
                         width 20%
                     .header__menu
-                        margin-left 50px
                         .header__link
                             float left
                             font-size 13px
@@ -922,6 +1040,8 @@ input {
                             font-family Lato-Bold
                             padding-top 12px
                             padding-left 10px
+                            display block
+                            margin-left 40px
                             & a 
                                 text-decoration none
                                 text-transform uppercase
@@ -933,6 +1053,14 @@ input {
                     .header__telephone
                         float right
                         padding-top 10px
+                        text-decoration none
+                        text-transform uppercase
+                        color #3e5960
+                        padding-right 10px
+                        &:hover
+                            color #62d4f8
+                        &:active
+                            color #62d4f8
                 .header-mob__hide
                     display block
             .header__mob-icon
@@ -965,12 +1093,13 @@ input {
                     top 81.5%
     .products
         .cards-row
-            margin-left 50px
             .card
                 float left
                 margin 20px 20px  
                 &:first-child
                     margin-top 20px
+                &:nth-child(2n+1)   
+                    margin-right 105px 
     .about-us
         height 750px
         .left
@@ -1000,7 +1129,9 @@ input {
     .water
         .item-row
             .item
-                width 31%
+                width 33%
+                
+                                            
                 .item__price
                     margin-right 0
                 &:last-child
@@ -1012,20 +1143,38 @@ input {
                         .button
                             left -9%  
                     .item__label
-                        left 83%
+                        right 0
+                        transform translateX(250%)
                     .item__price
-                        left 90%
+                        left 55%
+                        right 0
+                        transform translateX(500%)
+                &:nth-child(2n)
+                    padding-left 50px 
+                    .item__price
+                        width 90px  
+                &:first-child
+                    padding-left 60px          
+                         
     .equipment
         .coolers-row
-            margin-left 0
+            margin-left 20px
             .coolers
                 float left
                 margin-left 15px
                 &:last-child
                     margin-left 0
-                margin-left 0
-        
-                              
+    .order .form
+        left 49%                
+
+    .footer     
+        .icon.icon-phone
+            margin-left 237px
+        .footer__author
+            margin-bottom 20px               
+        .footer__ps
+            // float left
+                                  
         
                                        
          

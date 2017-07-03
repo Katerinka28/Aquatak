@@ -34,9 +34,9 @@ html
                                 each link, i in links 
                                     li.header__link: a(href="#block"+i+"") #{link}
                         div.header__block
-                            a.telephone-icon.icon-phone(tel="+3809522222222")
+                            a.telephone-icon(href="#call-dialog").icon-phone#call-trigger
                         div.header__block.header-mob__hide       
-                            a.header__telephone +38 066 05 05 000     
+                            a.header__telephone(href="tel:+380660505000") +38 066 05 05 000     
                     
                     div.header__mobile
                         div.header__mob-wrapper
@@ -59,7 +59,7 @@ html
                             трех баллонов -
                             помпа в подарок
                         p.top__text ДОСТАВКА ПО ВСЕЙ УКРАИНЕ
-                        a.top__btn(href="") Заказать
+                        a.top__btn(href="#block2") Заказать
                         img.top__img(src="./images/pompa.png")
         div.products#block0
             div.container
@@ -80,11 +80,15 @@ html
                         img.left__image(src="./images/about-us-girl.png")                
                 div.right.clearfix
                     p.title Сертификаты
-                    div.certificate
-                        img(src="./images/certificate.png")
-                        img(src="./images/certificate.png")
-                        img(src="./images/certificate.png")
-                        img(src="./images/certificate.png")
+                    div.certificate.clearfix
+                        a(href="./images/certificate.png" class="image-link")
+                            img(src="./images/certificate.png")
+                        a(href="./images/certificate.png" class="image-link")
+                            img(src="./images/certificate.png")
+                        a(href="./images/certificate.png" class="image-link")
+                            img(src="./images/certificate.png")
+                        a(href="./images/certificate.png" class="image-link")
+                            img(src="./images/certificate.png")
         div.water.clearfix
             div.container
                 div.item-row.clearfix
@@ -102,21 +106,21 @@ html
                     +Createequipment(dataequipment[2].img, dataequipment[2].title, rows , dataequipment[2].label)
         div.order#block2
             div.container
-                form.form.clearfix
+                form.form#form.clearfix
                     div.form__title
                         p.title.icon-ico Доставка за час
                     div.form-name
                         input(name="name" class="name" id="name" type="text" placeholder="Ваше имя").form__name
                     div.form-telephone
                         input(name="tel" class="tel" id="tel" type="tel" placeholder="Телефон").form__telephone
-                    div.form-address
+                    div.form-address.clearfix
                         input(name="address" class="address" id="address" type="text" placeholder="Ваш адрес").form__address
-                    div.form-selected-bottel
-                        select
+                    div.form-selected-bottel#selected-bottel
+                        select(name="select")
                             option Баллонов
-                            option 1 
-                            option 2
-                            option 3
+                            option(value="1") 1 
+                            option(value="2")  2
+                            option(value="3") 3
                     div.form-selected-type
                         select
                             option Украиночка с цеолитом
@@ -146,13 +150,30 @@ html
                 div.footer__ps.clearfix
                     p ООО АКВАТАК УКРАИНА © 2017
                 div.footer__author.clearfix
-                    p Создание  сайтов -<a href="http://webcase.studio/ru/"> WebCase            
+                    p Создание  сайтов -
+                        a(href="http://webcase.studio/ru/") WebCase            
+    div#thanks.zoom-anim-dialog.mfp-hide.clearfix
+        div.left
+            img.thanks__image(src="./images/thanks_image.png")
+        div.right
+            p.thanks__title Спасибо за Ваш заказ!
+            p.thanks__text В ближайшее время с Вами свяжется наш менеджер
 
-
+    div#call-dialog.zoom-anim-dialog.mfp-hide.clearfix
+        a(href="tel:+380660505000") +380660505000
+        a(href="tel:+380500505000") +380500505000    
+        a(href="tel:+380950505000") +380950505000
 
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js")
-    script(src="./scripts/bundle.min.js")
+    script(src="./scripts/jquery.magnific-popup.js")
     script(src="./scripts/maskinput.js")
+    script(src="./scripts/bundle.min.js")
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvM0CzDixRaf8jNBdl_wIGhneO2b6-YEY&callback=initMap" async defer)
+    
+
+
+
+
+
